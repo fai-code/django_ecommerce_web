@@ -1,0 +1,52 @@
+{% include 'base.html'%}
+{% include 'navigation.html'%}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <form id="orders">
+            <div class="row form-group">
+                <div>
+                    <h3>Orders</h3>
+                </div>
+                <div class="row form-group"></div>
+                    <div class="col-md-4">
+                       <label for="product-name"> Name</label>
+                       <input type="text" class="form-control" name="name">
+                    </div>
+                </div>
+                <div class="row form">
+                    <div class="col-md-4">
+                        <label for="product-type">Type</label>
+                        <input type="text" class="form-control" name="">
+                    </div>
+                </div>
+                <div class="row form">
+                    <div class="col-md-4">
+                        <label for="orders-quantity">Quantity</label>
+                        <input type="text" class="form-control" name="">
+                    </div>                   
+                </div>
+                <div class="row form">
+                    <div class="col-md-4">
+                        <label for="price">Price</label>
+                        <input type="number" class="form-control" name="">
+                    </div>
+                </div>
+                <div class="row form">
+                    <div class="col-md-4">
+                        <label for="discount">Discount</label>
+                        <input type="number" class="form-control" name="">
+                </div>
+            </div>
+            <div class="row form">
+                <div class="col-md-4">
+                  <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+               </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

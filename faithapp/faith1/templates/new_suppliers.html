@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <form id="suppliers">
+            <div><h3>Suppliers</h3></div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="id_name">Name</label>
+                    <input type="text" class="form-control" id="id_name" name="name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="id_phone_number">Phone Number</label>
+                    <input type="number" class="form-control" id="id_phone_number" name="phone_number">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="id_items">Items</label>
+                    <input type="text" class="form-control" id="id_items" name="items">
+                </div>
+                <div class="col-md-4">
+                    <label for="id_home_page">Home page</label>
+                    <input type="text" class="form-control" id="id_home_page" name="home_page">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="id_company_name">Company Name</label>
+                    <input type="text" class="form-control" id="id_company_name" name="company_name">
+                </div>
+                <div class="col-md-4">
+                    <label for="id_contact_name">Contact Name</label>
+                    <input type="text" class="form-control" id="id_contact_name" name="contact_name">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="id_contact_title">Contact Title</label>
+                    <input type="text" class="form-control" id="id_contact_title" name="contact_title">
+                </div>
+                <div class="col-md-4">
+                    <label for="id_address">Address</label>
+                    <input type="text" class="form-control" id="id_address" name="address">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="id_town">Town</label>
+                    <input type="text" class="form-control" id="id_town" name="town">
+                </div>
+                <div class="col-md-4">
+                    <label for="id_country">Country</label>
+                    <input type="text" class="form-control" id="id_country" name="country">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="id_county">County</label>
+                    <input type="text" class="form-control" id="id_county" name="county">
+                </div>
+                <div class="col-md-4">
+                    <label for="id_postal_code">Postal Code</label>
+                    <input type="number" class="form-control" id="id_postal_code" name="postal_code">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% include 'base.html'%}
+{% include 'navigation.html'%}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <form id="products">
+            <div class="row form-group">
+                <div><h3>Products</h3></div>
+                <div class="row form">
+                  <div class="col-md-4"> 
+                     <label for="product-name">Product Name</label>
+                     <input type="text" class="form-control" name="name">
+                  </div>
+                </div>
+                <div class="row form">
+                  <div class="col-md-4">
+                    <label for="product-type"> Product Type</label>
+                    <input type="text" class="form-control" name="type">
+                  </div>
+                </div>
+                <div class="row form">
+                  <div class="col-md-4">
+                        <label for="quantity-per-unit">Quantity Per Unit</label>
+                        <input type="number" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="row form">
+                  <div class="col-md-4">
+                        <label for="unit-price">Unit Price</label>
+                        <input type="number" class="form-control" name="">
+                  </div>
+                  
+                </div>
+                <div class="row form">
+                  <div class="col-md-4">
+                        <label for="unit-in-stock">Unit in Stock</label>
+                        <input type="number" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="row form">
+                  <div class="col-md-4">
+                        <label for="unit-on-order">Unit on Order</label>
+                        <input type="number" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="row form">
+                  <div class="col-md-4">
+                        <label for="re-order-level">Re-oder Level</label>
+                        <input type="number" class="form-control" name="">
+                  </div>
+                </div>
+                <div class="row form">
+                   <div class="col-md-4">
+                      <input type="submit" value="submit" class="btn btn-primary">
+                   </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}
