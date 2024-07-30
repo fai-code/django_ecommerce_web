@@ -39,9 +39,9 @@ class Products(models.Model):
         return self.product_name
 
 class Orders(models.Model):
-    Customers = models.ForeignKey("Customers", on_delete=models.CASCADE)
-    Products = models.ForeignKey("products", on_delete=models.CASCADE)
-    Category = models.ForeignKey("category", on_delete=models.CASCADE)
+    customers = models.ForeignKey("Customers", on_delete=models.CASCADE)
+    products = models.ForeignKey("Products", on_delete=models.CASCADE)
+    category = models.ForeignKey("Category", on_delete=models.CASCADE)
     order_type = models.CharField(max_length=10)
     order_quantity = models.IntegerField()
     name = models.CharField(max_length=7)

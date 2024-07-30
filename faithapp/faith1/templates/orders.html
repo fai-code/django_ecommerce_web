@@ -1,11 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% load static %}
+{% include 'base.html'%}
+{% include 'navigation.html'%}
+{% block content %}
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Customer Name</th>
+            <th>Category Name</th>
+            <th>Product Name</th>
+            <th>Order Quantity</th>
+            <th>Order Type</th>
+            <th>Name</th>
+            <th>Order Price</th>
+            <th>Order Discount</th>
+            <th>Action</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        {%  for orders in orders %}
+            <td>{{ Orders.customers.first_name }}</td>
+            <td>{{ Orders.category.category_name}}</td>
+            <td>{{ Orders.products.product_name }}</td>
+            <td>{{ Orders.Order_Quantity }}</td>
+            <td>{{ Orders.order_type }}</td>
+            <td>{{ Orders.name }}</td>
+            <td>{{ Orders.order_price }}</td>
+            <td>{{ Orders.order_discount }}</td>
+        </tr>  
+        {%  endfor  %}
+    </tbody>
+</table>
+
+
+{% endblock content %}

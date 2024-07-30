@@ -1,0 +1,39 @@
+{% load static %}
+{% include 'base.html'%}
+{% include 'navigation.html'%}
+{% block content %}
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Products</th>
+            <th>Postal Code</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact Number</th>
+            <th>Contact title</th>
+            <th>Items</th>
+            <th>Home Page</th>
+            <th>Country</th>
+            <th>County</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ Suppliers.products }}</td>
+            <td>{{ Suppliers.postal-code }}</td>
+            <td>{{ Suppliers.name }}</td>
+            <td>{{ Suppliers.address }}</td>
+            <td>{{ Suppliers.contact-number }}</td>
+            <td>{{ Suppliers.contact-title }}</td>
+            <td>{{ Suppliers.items }}</td>
+            <td>{{ Suppliers.home-page }}</td>
+            <td>{{ Suppliers.county }}</td>
+            <td>{{ Suppliers.country }}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+{% endblock content %}

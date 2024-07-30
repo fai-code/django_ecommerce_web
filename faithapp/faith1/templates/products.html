@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% load static %}
+{% include 'base.html'%}
+{% include 'navigation.html'%}
+{% block content %}
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>#</th>
+            <th>Product Type</th>
+            <th>Product Name</th>
+            <th>Quantity Per Unit</th>
+            <th>Unit Price</th>
+            <th>Unit in Stock</th>
+            <th>Unit Order</th>
+            <th>Re order Level</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        {%  for products in products %}
+            <td>{{ products.product_type }}</td>
+            <td>{{ products.product_name}}</td>
+            <td>{{ products.quantity_per_unit}}</td>
+            <td>{{ products.unit_price}}</td>
+            <td>{{ products.unit_order}}</td>
+            <td>{{ products.re_order_level}}</td>
+        </tr>
+        {%  endfor  %}
+
+
+    </tbody>
+</table>
+
+
+{% endblock content %}
